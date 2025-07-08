@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Базовый класс btn */
+.btn {
+  width: 220px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s all;
+  outline: none;
+}
+
+/* Модификатор: btn_white — белая кнопка */
+.btn_white {
+  background-color: #fff;
+}
+
+/* Модификатор: btn_dark — тёмная кнопка */
+.btn_dark {
+  background-color: var(--dark); /* Используем CSS-переменную */
+  color: #fff;
+  border: none;
+}
+
+/* Модификатор: btn_min — маленькая высота */
+.btn_min {
+  height: 50px;
+}
+
+/* Поведение при наведении курсора */
+.btn:hover {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Разделитель */
+.divider {
+  width: 330px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Заголовок */
+.title {
+  font-size: 36px;
+  font-weight: 400;
+}
